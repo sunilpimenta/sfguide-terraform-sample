@@ -28,7 +28,6 @@ provider "snowflake" {
 resource "snowflake_schema" "schema" {
   database   = snowflake_database.db.name
   name       = "TF_DEMO"
-  is_managed = false
 }
 
 resource "tls_private_key" "svc_key" {
